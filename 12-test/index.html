@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>تمرین HTML</title>
+    <style>
+      body {
+        font-family: Tahoma;
+        padding: 20px;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: darkblue;
+      }
+
+      
+
+      table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #999;
+        padding: 10px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #d0eaff;
+      }
+
+      a {
+        color: teal;
+      }
+
+      img {
+        display: block;
+        margin: 20px auto;
+        width: 250px;
+      }
+
+      p,ul,ol {
+        padding: 5px 10%;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>تمرین عملی HTML</h1>
+    <h2>مشخصات یک محصول</h2>
+
+    <p title="توضیحات محصول">
+      این محصول دارای <strong>ویژگی‌های بسیار عالی</strong> بوده و برای کاربران
+      <em>حرفه‌ای</em> طراحی شده است. در ادامه به مشخصات آن می‌پردازیم:
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>نام ویژگی</th>
+          <th>توضیح</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>صفحه نمایش</b></td>
+          <td>1.5 اینچ لمسی</td>
+        </tr>
+        <tr>
+          <td><i>باتری</i></td>
+          <td>تا ۳ روز استفاده</td>
+        </tr>
+        <tr>
+          <td><mark>وزن</mark></td>
+          <td>۵۰ گرم</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2"><small>اطلاعات برای تابستان ۱۴۰۴</small></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <img src="./images/se-title.webp" alt="تصویر محصول" />
+
+    <p>
+      برای دیدن اطلاعات بیشتر، به صفحه
+      <a href="./pages/index.html">محصول</a> مراجعه کنید. <br /><br />
+      یا به بخش <a href="#download">دانلود</a> بروید.
+    </p>
+
+    <p>
+      <span id="download" style="color: green">📥 لینک دانلود:</span>
+      <br />
+      <a href="./images/Attack.jpg" download>دانلود ویدیو معرفی</a>
+    </p>
+
+    <p>
+      <ins>محصول جدید</ins> در راه است!<br />
+      <del>مدل قبلی</del> دیگر تولید نمی‌شود.
+    </p>
+
+    <picture>
+      <source srcset="./images/Attack.jpg" media="(min-width: 1400px)" />
+      <source srcset="./images/programmers.jpg" media="(min-width: 900px)" />
+      <img src="./images/wp1904105-developer-wallpapers.jpg" alt="بک‌گراند" />
+    </picture>
+
+    <h2>لیست ویژگی‌ها</h2>
+    <ul>
+      <li>سبک و قابل حمل</li>
+      <li>ضد آب</li>
+      <li>دارای GPS</li>
+    </ul>
+
+    <h2>مراحل خرید</h2>
+    <ol type="1">
+      <li>مشاهده محصول</li>
+      <li>افزودن به سبد</li>
+      <li>ثبت سفارش</li>
+    </ol>
+
+    <p class="footer">
+      <small><cite>تهیه شده توسط تیم آموزش آرمین</cite></small>
+    </p>
+  </body>
+</html>

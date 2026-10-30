@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />
+
+    <style>
+      body {
+        font-family: "Inter";
+        background-color: #f4f3fb;
+        color: #242128;
+        margin: 0 8%;
+      }
+
+      #nav,
+      #hero,
+      #about,
+      #skills,
+      #project,
+      #experience,
+      #display,
+      #contact {
+        text-align: center;
+        margin: 20px 0;
+        padding: 24px;
+        background-color: #fff;
+        border-radius: 24px;
+        border: 1px solid #e4deec;
+      }
+
+      #nav {
+        padding: 16px;
+      }
+
+      a {
+        color: #6750a4;
+        text-decoration: none;
+        font-weight: 600;
+        margin: 6px;
+      }
+
+      small {
+        color: #8b8790;
+      }
+
+      #hero__stack,
+      #about__subtitle,
+      #skills__subtitle,
+      #project__subtitle,
+      #experience__subtitle,
+      #display__subtitle,
+      #contact__subtitle {
+        color: #7658b5;
+        font-weight: 600;
+      }
+
+      #hero__title {
+        font-size: 24px;
+        margin: 12px 0;
+      }
+
+      span {
+        margin: 4px;
+        padding: 4px;
+        background-color: #f2edff;
+        color: #6750a4;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 600;
+        border: 1px solid #ddd2f5;
+      }
+
+      #hero__title--swap {
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        font-size: inherit;
+      }
+
+      p {
+        color: #66616d;
+        line-height: 1.8;
+      }
+
+      strong {
+        color: #452b71;
+      }
+
+      em {
+        color: #00796b;
+      }
+
+      #hero__img {
+        width: 180px;
+        height: 180px;
+        margin: 20px;
+        border-radius: 50%;
+        border: 6px solid #eee8f8;
+      }
+
+      #hero__wrapper--btns {
+        margin: 16px 0;
+      }
+
+      #hero__btn--js,
+      #backend__nodejs,
+      #backend__python {
+        color: #166534;
+        background-color: #ecfdf3;
+        border-color: #c7ead2;
+      }
+
+      #hero__btn--project {
+        color: #fff;
+        background-color: #6750a4;
+        padding: 10px 18px;
+        border-radius: 18px;
+        display: inline-block;
+      }
+
+      #about,
+      #skills,
+      #project,
+      #experience,
+      #display {
+        text-align: start;
+      }
+
+      i {
+        color: #00897b;
+      }
+
+      del {
+        color: #d93025;
+      }
+
+      ins {
+        color: #188038;
+      }
+
+      blockquote {
+        margin: 20px 0;
+        padding: 18px;
+        background-color: #faf8ff;
+        border: 1px solid #e2d9f1;
+        border-radius: 18px;
+      }
+      #frontend,
+      #backend {
+        margin: 12px 0;
+        padding: 18px;
+        border-radius: 18px;
+      }
+
+      #frontend {
+        background-color: #f8f5ff;
+        border: 1px solid #e1d7f5;
+      }
+
+      #backend {
+        background-color: #f1faf8;
+        border: 1px solid #cce9e2;
+      }
+
+      #frontend h3,
+      #backend h3 {
+        margin-top: 0;
+      }
+
+      #project__image {
+        width: 100%;
+        border-radius: 18px;
+      }
+
+      pre {
+        padding: 18px;
+        background-color: #202124;
+        color: #eee;
+        border-radius: 18px;
+      }
+
+      #display__block {
+        display: block;
+        margin: 10px 0 20px;
+        padding: 8px;
+        background-color: #6750a4;
+        color: #fff;
+        border-radius: 10px;
+      }
+
+      #display__inline,
+      #display__inline--block {
+        display: inline;
+        padding: 8px;
+        background-color: #f0ebff;
+        color: #6750a4;
+        border-radius: 10px;
+      }
+
+      #display__inline--block {
+        display: inline-block;
+      }
+
+      #contact {
+        background-color: #2d2140;
+        color: #fff;
+        border-color: #2d2140;
+      }
+
+      #contact__subtitle {
+        color: #cfc5dc;
+      }
+
+      #contact__address {
+        padding: 16px;
+        background-color: #fff;
+        color: #666;
+        border-radius: 16px;
+      }
+      #address--username,
+      #address--email {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      #download__CV {
+        display: inline-block;
+        background: #fff;
+        color: #6750a4;
+        padding: 10px 18px;
+        border-radius: 14px;
+      }
+
+      #footer {
+        text-align: center;
+        margin: 28px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#project">Project</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div id="hero">
+      <small id="hero__stack">WEB DEVELOPER</small>
+
+      <h1 id="hero__title">
+        Armin
+        <span id="hero__title--swap">Abdi</span>
+      </h1>
+
+      <p>
+        Building
+        <strong>clean websites</strong>
+        with
+        <em>simple ideas</em>
+      </p>
+
+      <picture>
+        <source srcset="./assets/images/photo_2023-11-05_22-31-07.jpg" media="(min-width:900px)" />
+        <img src="./assets/images/photo_2024-04-29_17-58-16.jpg" alt="Developer portrait" id="hero__img" />
+      </picture>
+
+      <div id="hero__wrapper--btns">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span id="hero__btn--js">JavaScript</span>
+      </div>
+
+      <a href="" id="hero__btn--project">View Project</a>
+    </div>
+
+    <div id="about">
+      <small id="about__subtitle">ABOUT ME</small>
+
+      <h2>More than just code.</h2>
+
+      <p>
+        I enjoy
+        <i>building interfaces</i>
+        , solving problems and learning
+        <strong>new technologies</strong>
+        .
+      </p>
+
+      <p>
+        Old approach:
+        <del>copy everything</del>
+      </p>
+
+      <p>
+        New approach:
+        <ins>understand everything</ins>
+      </p>
+
+      <blockquote>
+        <q>Learn the fundamentals first.</q>
+        <br />
+        <em>Developer mindset</em>
+      </blockquote>
+
+      <p>
+        <dfn>Frontend</dfn>
+        is the part users directly interact with.
+      </p>
+
+      <p>
+        <abbr title="HyperText Markup Language">HTML</abbr>
+        is the structure of the page.
+      </p>
+    </div>
+
+    <div id="skills">
+      <small id="skills__subtitle">SKILLS</small>
+
+      <h2>My Toolkit</h2>
+
+      <div id="frontend">
+        <h3>Frontend</h3>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+      <div id="backend">
+        <h3>Backend</h3>
+        <span id="backend__nodejs">Node.js</span>
+        <span id="backend__python">Python</span>
+      </div>
+
+      <p>
+        HTML
+        <sub>5</sub>
+        . CSS
+        <sub>3</sub>
+        . Performance
+        <sub>1</sub>
+      </p>
+
+      <p>
+        <sup>1</sup>
+        One of my main goals
+      </p>
+    </div>
+
+    <div id="project">
+      <small id="project__subtitle">FEATURED PROJECT</small>
+
+      <h2>Developer Workspace</h2>
+
+      <img src="./assets/images/wp1904105-developer-wallpapers.jpg" alt="Developer workspace" id="project__image" />
+
+      <p>
+        A clean project focused on
+        <strong>clarity</strong>
+        , typography and simple visual hierarchy.
+      </p>
+
+      <span id="backend__nodejs">Node.js</span>
+      <span id="backend__python">Python</span>
+    </div>
+
+    <div id="experience">
+      <small id="experience__subtitle">JOURNEY</small>
+
+      <h2>Learning Path</h2>
+      <p>01 HTML → 02 CSS → 03 JavaScript → 04 Backend</p>
+      <pre>
+$ whoami
+armin
+
+$ goal
+professional developer
+
+$ status
+building...
+       </pre>
+    </div>
+
+    <div id="display">
+      <small id="display__subtitle">CSS BASICS</small>
+      <h2>Display</h2>
+
+      <span id="display__block">BLOCK</span>
+      <span id="display__inline">INLINE</span>
+      <span id="display__inline--block">INLINE-BLOCK</span>
+    </div>
+
+    <div id="contact">
+      <small id="contact__subtitle">LET'S CONNECT</small>
+      <h2>Have an idea?</h2>
+      <div id="contact__address">
+        <strong id="address--username">Armin Abdi</strong>
+        <a href="mailto:arminabdijs@gmail.com" id="address--email">arminabdijs@gmail.com</a>
+        <a href="https://arminabdi.info" target="_blank">Website</a>
+        .
+        <a href="https://github.com/arminabdijs" target="_blank">GitHub</a>
+        .
+        <a href="https://www.linkedin.com/in/arminabdijs/" target="_blank">LinkedIn</a>
+      </div>
+      <a href="./assets/resume/CV.pdf" download id="download__CV">Download CV</a>
+    </div>
+
+    <div id="footer">
+      <small>Web Developer · Computer Engineer</small>
+    </div>
+  </body>
+</html>

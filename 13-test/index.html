@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>تمرین div ها</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: IRANSansX, Arial;
+        background-color: #f2f2f2;
+      }
+
+      .card {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #ff0080;
+        background-color: #e0f7fa;
+        margin: 20px;
+        padding: 15px;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .card h2 {
+        color: crimson;
+        font-size: 22px;
+        border-bottom: 1px solid gray;
+      }
+
+      .card p {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.8;
+      }
+
+      .highlight {
+        color: blue;
+        font-weight: bold;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .footer a {
+        color: darkmagenta;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .footer a:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- بخش اول: کارت معرفی -->
+    <div class="card">
+      <h2>عنوان اول</h2>
+      <p>
+        این یک پاراگراف معمولی است با
+        <span class="highlight">تأکید آبی</span>
+        . این متن برای تمرین استفاده از div نوشته شده است.
+      </p>
+    </div>
+
+    <!-- بخش دوم: کارت مقاله -->
+    <div class="card">
+      <h2>عنوان دوم</h2>
+      <p>
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است. همچنین می‌توانیم
+        <span style="color: green">کلمه خاصی</span>
+        را با span جدا کنیم.
+      </p>
+    </div>
+
+    <!-- بخش سوم: با پاراگراف طولانی‌تر -->
+    <div class="card">
+      <h2>عنوان سوم</h2>
+      <p title="پاراگراف توضیحی">
+        <b>متن بولد شده:</b>
+        این یک مثال ساده برای تمرین استفاده از تگ‌های div، span، و پشتیبانی از استایل داخلی است. همچنین
+        <em>متن تأکیدی</em>
+        در خط زیر استفاده شده است:
+        <br />
+        <mark>این متن علامت‌گذاری شده است</mark>
+      </p>
+    </div>
+
+    <!-- پاورقی با لینک -->
+    <div class="footer">
+      <p>جهت مشاهده ویدیو کلیک کنید:</p>
+      <a href="./video/assats/vedio/3.mp4" download>دریافت ویدیو تمرینی</a>
+    </div>
+  </body>
+</html>

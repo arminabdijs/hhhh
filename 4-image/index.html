@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <!--Tag image -->
+    <img
+      src="./assats/pexels-rubaitulazad-13791403.jpg"
+      alt="The famous crush of Steve Jobs"
+      width="300px"
+    />
+
+    <!--Attribute alt-->
+    <img
+      src="./assats/wp1904105-developekr-wallpapers.jpg"
+      alt="The famous crush of Steve Jobs"
+    />
+
+    <!--=================================================================================================-->
+    <!--=================================================================================================-->
+    <!--=================================================================================================-->
+
+    <!--Tag picture-->
+    <picture>
+      <!--Source-->
+      <source srcset="./assats/Attack.jpg" media="(min-width: 1400px)" />
+      <source
+        srcset="./assats/pexels-rubaitulazad-13791403.jpg"
+        media="(min-width: 1200px)"
+      />
+      <source srcset="./assats/programmers.jpg" media="(min-width: 900px)" />
+
+      <!--Fallback-->
+      <img
+        src="./assats/wp1904105-developer-wallpapers.jpg"
+        alt="The famous crush of Steve Jobs"
+      />
+    </picture>
+  </body>
+</html>

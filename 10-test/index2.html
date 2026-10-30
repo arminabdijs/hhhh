@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Academy - Student Report</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f4f7;
+        color: #222;
+        margin: 0;
+        padding: 30px;
+      }
+
+      h1 {
+        background-color: #17202a;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin: 0 0 20px 0;
+        border-radius: 12px;
+      }
+
+      h2 {
+        color: #17202a;
+        border-bottom: 2px solid #17202a;
+        padding-bottom: 10px;
+        margin-top: 40px;
+      }
+
+      h3 {
+        color: #34495e;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.8;
+      }
+
+      a {
+        color: #1565c0;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .intro {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      }
+
+      .menu {
+        background-color: #ffffff;
+        padding: 15px;
+        margin-top: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .menu a {
+        display: inline-block;
+        margin: 5px;
+        padding: 8px 12px;
+        background-color: #eaf2f8;
+        border-radius: 6px;
+      }
+
+      .info {
+        color: #555;
+      }
+
+      .important {
+        font-weight: bold;
+      }
+
+      mark {
+        background-color: #ffe082;
+        padding: 3px 6px;
+        border-radius: 4px;
+      }
+
+      ins {
+        color: #188038;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      del {
+        color: #c62828;
+        font-weight: bold;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+      }
+
+      caption {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 15px;
+        color: #17202a;
+      }
+
+      th {
+        background-color: #17202a;
+        color: white;
+        padding: 12px;
+        border: 1px solid #444;
+      }
+
+      td {
+        padding: 11px;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+
+      tbody tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      tfoot td {
+        background-color: #eaf2f8;
+        font-weight: bold;
+      }
+
+      .course-box {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      }
+
+      .course-box span {
+        color: #1565c0;
+        font-weight: bold;
+      }
+
+      .teacher {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 18px;
+        margin-top: 15px;
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+      }
+
+      .teacher span {
+        color: #1565c0;
+      }
+
+      .teacher small {
+        color: #777;
+      }
+
+      .top-student {
+        background-color: white;
+        padding: 25px;
+        margin-top: 20px;
+        border-left: 6px solid #1565c0;
+        border-radius: 8px;
+      }
+
+      blockquote {
+        background-color: #f4f6f7;
+        border-left: 5px solid #7f8c8d;
+        padding: 18px;
+        margin: 20px 0;
+        color: #444;
+      }
+
+      pre {
+        background-color: #17202a;
+        color: #ecf0f1;
+        padding: 20px;
+        border-radius: 10px;
+        overflow-x: auto;
+        font-size: 14px;
+      }
+
+      .contact {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      }
+
+      .contact a {
+        font-weight: bold;
+      }
+
+      .picture-box {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+      }
+
+      .picture-box img {
+        width: 100%;
+        max-width: 700px;
+        border-radius: 10px;
+      }
+
+      .statistics {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .footer-text {
+        text-align: center;
+        color: #777;
+        margin-top: 40px;
+        padding: 20px;
+      }
+
+      @media (max-width: 800px) {
+        body {
+          padding: 15px;
+        }
+
+        .teacher {
+          width: 100%;
+          display: block;
+        }
+
+        table {
+          font-size: 13px;
+        }
+
+        th,
+        td {
+          padding: 8px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Programming Academy - Student Report</h1>
+
+    <div class="intro" id="introduction">
+      <h2>Academy Introduction</h2>
+
+      <p>
+        Welcome to
+        <strong>Programming Academy</strong>
+        . Our academy focuses on
+        <em>modern web development</em>
+        and practical programming skills.
+      </p>
+
+      <p class="info">
+        This report contains the latest
+        <mark>student performance</mark>
+        , course information and academy statistics.
+      </p>
+
+      <p>
+        Our
+        <abbr title="Web Development">WD</abbr>
+        program is designed for students who want to build professional websites.
+      </p>
+
+      <p>
+        <small>Report generated for academic evaluation purposes.</small>
+      </p>
+
+      <hr />
+    </div>
+
+    <div class="menu">
+      <a href="#introduction">Introduction</a>
+      <a href="#students">Students</a>
+      <a href="#courses">Courses</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#teachers">Teachers</a>
+      <a href="#statistics">Statistics</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <h2 id="students">Student Performance Report</h2>
+
+    <table>
+      <caption>Student Academic Performance</caption>
+
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Score</th>
+          <th>Status</th>
+          <th>Level</th>
+          <th>Final Result</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1001</td>
+          <td><strong>Ali Rezaei</strong></td>
+          <td>HTML</td>
+          <td><mark>92</mark></td>
+          <td><ins>Passed</ins></td>
+          <td>Advanced</td>
+          <td>Excellent</td>
+        </tr>
+
+        <tr>
+          <td>1002</td>
+          <td><strong>Sara Ahmadi</strong></td>
+          <td>CSS</td>
+          <td><mark>88</mark></td>
+          <td><ins>Passed</ins></td>
+          <td>Advanced</td>
+          <td>Excellent</td>
+        </tr>
+
+        <tr>
+          <td>1003</td>
+          <td><strong>Reza Karimi</strong></td>
+          <td>JavaScript</td>
+          <td><mark>76</mark></td>
+          <td><ins>Passed</ins></td>
+          <td>Intermediate</td>
+          <td>Good</td>
+        </tr>
+
+        <tr>
+          <td>1004</td>
+          <td><strong>Nima Hosseini</strong></td>
+          <td>PHP</td>
+          <td><mark>64</mark></td>
+          <td><ins>Passed</ins></td>
+          <td>Intermediate</td>
+          <td>Good</td>
+        </tr>
+
+        <tr>
+          <td>1005</td>
+          <td><strong>Maryam Safari</strong></td>
+          <td>HTML</td>
+          <td><mark>95</mark></td>
+          <td><ins>Passed</ins></td>
+          <td>Advanced</td>
+          <td>Excellent</td>
+        </tr>
+
+        <tr>
+          <td>1006</td>
+          <td><strong>Amir Hosseini</strong></td>
+          <td>CSS</td>
+          <td><mark>58</mark></td>
+          <td><del>Failed</del></td>
+          <td>Beginner</td>
+          <td>Needs Review</td>
+        </tr>
+
+        <tr>
+          <td>1007</td>
+          <td><strong>Fatemeh Karimi</strong></td>
+          <td>JavaScript</td>
+          <td><mark>81</mark></td>
+          <td><ins>Passed</ins></td>
+          <td>Intermediate</td>
+          <td>Very Good</td>
+        </tr>
+
+        <tr>
+          <td>1008</td>
+          <td><strong>Mohammad Ahmadi</strong></td>
+          <td>PHP</td>
+          <td><mark>69</mark></td>
+          <td><ins>Passed</ins></td>
+          <td>Intermediate</td>
+          <td>Good</td>
+        </tr>
+
+        <tr>
+          <td>1009</td>
+          <td><strong>Hamed Rezaei</strong></td>
+          <td>HTML</td>
+          <td><mark>47</mark></td>
+          <td><del>Failed</del></td>
+          <td>Beginner</td>
+          <td>Needs Review</td>
+        </tr>
+
+        <tr>
+          <td>1010</td>
+          <td><strong>Leila Moradi</strong></td>
+          <td>CSS</td>
+          <td><mark>90</mark></td>
+          <td><ins>Passed</ins></td>
+          <td>Advanced</td>
+          <td>Excellent</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="3">Class Average</td>
+
+          <td>76</td>
+
+          <td colspan="3">Academic Year 2026</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="course-box" id="courses">
+      <h2>Available Courses</h2>
+
+      <h3>Programming Languages</h3>
+
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+      </ul>
+
+      <h3>Student Levels</h3>
+
+      <ol type="A">
+        <li>Beginner</li>
+        <li>Intermediate</li>
+        <li>Advanced</li>
+        <li>Professional</li>
+      </ol>
+
+      <h3>Course Description</h3>
+
+      <dl>
+        <dt>
+          <span>HTML</span>
+        </dt>
+
+        <dd>Structure and semantic organization of web pages.</dd>
+
+        <dt>
+          <span>CSS</span>
+        </dt>
+
+        <dd>Styling, layout and visual presentation of websites.</dd>
+
+        <dt>
+          <span>JavaScript</span>
+        </dt>
+
+        <dd>Programming and interactive behavior on websites.</dd>
+
+        <dt>
+          <span>PHP</span>
+        </dt>
+
+        <dd>Server-side programming and web application development.</dd>
+      </dl>
+    </div>
+
+    <h2 id="schedule">Weekly Class Schedule</h2>
+
+    <table>
+      <caption>Weekly Academy Schedule</caption>
+
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>08:00</th>
+          <th>10:00</th>
+          <th>12:00</th>
+          <th>14:00</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Saturday</td>
+          <td colspan="2">HTML + CSS</td>
+          <td>JavaScript</td>
+          <td>PHP</td>
+        </tr>
+
+        <tr>
+          <td>Sunday</td>
+          <td>CSS</td>
+          <td>HTML</td>
+          <td colspan="2">PHP Workshop</td>
+        </tr>
+
+        <tr>
+          <td>Monday</td>
+          <td>JavaScript</td>
+          <td>PHP</td>
+          <td>CSS</td>
+          <td>HTML</td>
+        </tr>
+
+        <tr>
+          <td>Tuesday</td>
+          <td colspan="3">Full Stack Practice</td>
+          <td>Review</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="teachers">Our Teachers</h2>
+
+    <div class="teacher">
+      <h3>Web Development Instructor</h3>
+
+      <p>
+        <strong>Name:</strong>
+        <span>Daniel Smith</span>
+      </p>
+
+      <p>
+        <strong>Speciality:</strong>
+        <span>Frontend Development</span>
+      </p>
+
+      <p>
+        <strong>Experience:</strong>
+        <span>8 Years</span>
+      </p>
+
+      <small>Specialist in HTML, CSS and responsive web design.</small>
+    </div>
+
+    <div class="teacher">
+      <h3>Programming Instructor</h3>
+
+      <p>
+        <strong>Name:</strong>
+        <span>Emma Wilson</span>
+      </p>
+
+      <p>
+        <strong>Speciality:</strong>
+        <span>Backend Development</span>
+      </p>
+
+      <p>
+        <strong>Experience:</strong>
+        <span>7 Years</span>
+      </p>
+
+      <small>Specialist in PHP and web application development.</small>
+    </div>
+
+    <div class="teacher">
+      <h3>JavaScript Instructor</h3>
+
+      <p>
+        <strong>Name:</strong>
+        <span>Michael Brown</span>
+      </p>
+
+      <p>
+        <strong>Speciality:</strong>
+        <span>JavaScript Development</span>
+      </p>
+
+      <p>
+        <strong>Experience:</strong>
+        <span>6 Years</span>
+      </p>
+
+      <small>Specialist in modern JavaScript programming.</small>
+    </div>
+
+    <div class="teacher">
+      <h3>Database Instructor</h3>
+
+      <p>
+        <strong>Name:</strong>
+        <span>Olivia Taylor</span>
+      </p>
+
+      <p>
+        <strong>Speciality:</strong>
+        <span>Database Systems</span>
+      </p>
+
+      <p>
+        <strong>Experience:</strong>
+        <span>9 Years</span>
+      </p>
+
+      <small>Specialist in database architecture.</small>
+    </div>
+
+    <div class="top-student">
+      <h2>Featured Student</h2>
+
+      <p>
+        <strong>Maryam Safari</strong>
+        is one of our
+        <i>best performing</i>
+        students.
+      </p>
+
+      <p>
+        Her previous score was
+        <del>72</del>
+        and her new score is
+        <ins>95</ins>
+        .
+      </p>
+
+      <p>
+        She completed the
+        <u>Advanced Web Development</u>
+        program successfully.
+      </p>
+
+      <blockquote>
+        <q>Learning programming became much easier when I started building real projects instead of only reading theory.</q>
+
+        <br />
+
+        <cite>Maryam Safari - Programming Academy</cite>
+      </blockquote>
+    </div>
+
+    <h2 id="statistics">Academy Statistics</h2>
+
+    <div class="statistics">
+      <table>
+        <caption>2026 Academy Statistics</caption>
+
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Total Students</td>
+            <td>128</td>
+          </tr>
+
+          <tr>
+            <td>Passed Students</td>
+            <td>104</td>
+          </tr>
+
+          <tr>
+            <td>Failed Students</td>
+            <td>24</td>
+          </tr>
+
+          <tr>
+            <td>Average Score</td>
+            <td>84</td>
+          </tr>
+
+          <tr>
+            <td>Active Courses</td>
+            <td>7</td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Academy Status: Active</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Academy Image</h2>
+
+    <div class="picture-box">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" media="(min-width: 900px)" />
+
+        <source srcset="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" media="(min-width: 500px)" />
+
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="Programming Academy Classroom" width="700" />
+      </picture>
+    </div>
+
+    <h2 id="contact">Contact Academy</h2>
+
+    <div class="contact">
+      <address>
+        Programming Academy
+        <br />
+
+        Berlin, Germany
+        <br />
+
+        Email:
+        <a href="mailto:info@example.com">info@example.com</a>
+
+        <br />
+
+        Phone:
+        <a href="tel:+491234567890">+49 123 4567890</a>
+
+        <br />
+
+        Website:
+        <a href="https://example.com" target="_blank" title="Academy Website">Programming Academy</a>
+      </address>
+
+      <small>Contact us for more information about our courses.</small>
+    </div>
+
+    <h2>Academy Terminal</h2>
+
+    <pre>
+$ academy-report
+
+Loading student database...
+
+Students: 128
+Passed: 104
+Failed: 24
+
+Courses: 7
+Average Score: 84
+
+Top Student: Maryam Safari
+Top Score: 95
+
+Academy Status: ACTIVE
+
+Report completed successfully.
+    </pre>
+
+    <div class="footer-text">
+      <p>
+        <small>Programming Academy - Student Academic Report - 2026</small>
+      </p>
+
+      <p>
+        <a href="#introduction">Back to Introduction</a>
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f3fb;
+      color: #242128;
+      margin: 40px 8%;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      border: 1px solid #ddd2f5;
+    }
+
+    caption {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 20px;
+      color: #6750a4;
+    }
+
+    th, td {
+      border: 1px solid #ddd2f5;
+      padding: 14px;
+      text-align: center;
+    }
+
+    thead {
+      background-color: #6750a4;
+      color: white;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f8f5ff;
+    }
+
+    tfoot {
+      background-color: #eee8f8;
+      font-weight: bold;
+    }
+
+    ins {
+      color: #188038;
+      text-decoration: none;
+    }
+
+    del {
+      color: #d93025;
+    }
+
+    strong {
+      color: #452b71;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table>
+    <caption>Student Management</caption>
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Full Name</th>
+        <th>Age</th>
+        <th>Course</th>
+        <th>Score</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1001</td>
+        <td>Ali Ahmadi</td>
+        <td>22</td>
+        <td>HTML</td>
+        <td><strong>92</strong></td>
+        <td><ins>Passed</ins></td>
+      </tr>
+
+      <tr>
+        <td>1002</td>
+        <td>Sara Mohammadi</td>
+        <td>21</td>
+        <td>CSS</td>
+        <td><strong>85</strong></td>
+        <td><ins>Passed</ins></td>
+      </tr>
+
+      <tr>
+        <td>1003</td>
+        <td>Reza Karimi</td>
+        <td>24</td>
+        <td>HTML</td>
+        <td><strong>48</strong></td>
+        <td><del>Failed</del></td>
+      </tr>
+
+      <tr>
+        <td>1004</td>
+        <td>Mina Hosseini</td>
+        <td>20</td>
+        <td>CSS</td>
+        <td><strong>76</strong></td>
+        <td><ins>Passed</ins></td>
+      </tr>
+
+      <tr>
+        <td>1005</td>
+        <td>Amir Rezaei</td>
+        <td>23</td>
+        <td>HTML</td>
+        <td><strong>67</strong></td>
+        <td><ins>Passed</ins></td>
+      </tr>
+
+      <tr>
+        <td>1006</td>
+        <td>Neda Ebrahimi</td>
+        <td>22</td>
+        <td>CSS</td>
+        <td><strong>39</strong></td>
+        <td><del>Failed</del></td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="3">Total Students: 6</td>
+        <td colspan="3">Average Score: 67.83</td>
+      </tr>
+    </tfoot>
+
+  </table>
+
+</body>
+</html>
